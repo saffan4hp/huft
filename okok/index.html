@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Showcase - Kelas XI3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        #hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url(':\tugas2\lomba cm\DSC02021.JPG');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-item:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: #3b82f6;
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-item:hover:after {
+            width: 100%;
+        }
+        
+        .floating-btn {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: .15em solid #3b82f6;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #3b82f6; }
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .centered-card {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="relative">
+        <!-- Navigation -->
+        <nav class="flex items-center justify-between px-12 py-6">
+            <div class="flex items-center">
+                <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp_Image_2025-06-04_at_11.51.39_c22fdf51-removebg-preview.png" 
+                     alt="Logo XI3" class="h-16">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="https://p5-1-xi-3-da3h.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 1</a>
+                <a href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 2</a>
+                <a href="https://p5-cleanix.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 3</a>
+                <a href="https://projek-p5-one.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 4</a>
+                <a href="https://projek-p5-be7t.vercel.app/" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition" target="_blank">Explore Projects</a>
+            </div>
+        </nav>
+        
+        <!-- Hero Content -->
+        <div class="flex-grow flex flex-col items-center justify-center text-center px-4">
+            <div class="typewriter mb-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Meet Our Final Projects</h1>
+            </div>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl">
+                Penampilan Gelar Karya P5 'Rekayasa Teknologi' Kelas XI3
+            </p>
+            <button class="floating-btn px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all">
+                <a href="#services">Discover More</a>
+                <i class="fas fa-arrow-down ml-2"></i>
+            </button>
+        </div>
+        
+        <!-- Waves Animation -->
+        <div class="absolute bottom-0 left-0 right-0 overflow-hidden">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="w-full h-20">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" 
+                      style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Hasil Karya Kami!</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Discover the innovative components that build our technology showcase</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Manual Generator -->
+                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-manual">
+                    <div class="relative overflow-hidden">
+                        <img src="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/WhatsApp%20Image%202025-06-13%20at%2021.14.48.jpeg" 
+                             alt="Chopper Sayuran" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-cog text-blue-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800" href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/">Chopper Sayuran</h3>
+                        </div>
+                        <p id="desc-manual" class="text-gray-600">
+                           Dapat memotong sayur secara praktis dan efisien. Dapat digunakan dimanapun dan kapanpun. Hemat waktu dan listrik!
+                        </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-xs py-1 px-2 bg-blue-100 text-blue-600 rounded-full">Barang Bekas</span>
+                            <a href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/" target="_blank" class="text-sm font-medium hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- DC Generator -->
+                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-dc">
+                    <div class="relative overflow-hidden">
+                        <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp%20Image%202025-06-03%20at%2013.45.58_2f7eb441.jpg" 
+                             alt="GE Generator" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-bolt text-yellow-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">GE Generator</h3>
+                        </div>
+                        <p id="desc-dc" class="text-gray-600">
+                            Green Electricity generator berupa generator sederhana yang digerakkan dengan roda pemutar manual yang dapat menghasilkan listrik.
+                        </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-xs py-1 px-2 bg-yellow-100 text-yellow-600 rounded-full">Tek. Sederhana</span>
+                            <a class="text-blue-500 text-sm font-medium hover:text-blue-700" href="https://p5-1-xi-3-da3h.vercel.app/" target="_blank">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Clap Switch -->
+                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-clap">
+                    <div class="relative overflow-hidden">
+                        <img src="https://projek-p5-be7t.vercel.app/sponspp.jpeg" 
+                             alt="Clap Switch" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-hand-paper text-purple-500 mr-2"></i>
+                            <h3 class="text-xl font-semibold text-gray-800">Spons Eceng Gondok</h3>
+                        </div>
+                        <p id="desc-clap" class="text-gray-600">
+                            Spons ini terbuat dari eceng gondok dengan teknologi self-cleaning, dapat membersihkan diri & hambat pertumbuhan jamur.
+                        </p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-xs py-1 px-2 bg-purple-100 text-purple-600 rounded-full">Bahan Alam</span>
+                            <a href="https://projek-p5-be7t.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centered Cards Section -->
+            <div class="grid grid-cols-1 gap-8 mt-8">
+                <!-- Solar Panel - Centered -->
+                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-solar">
+                    <div class="w-full md:w-2/3">
+                        <div class="relative overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1FtkUstm2fKdtF54B7Vs1kakkYxMBoTwu" 
+                                 alt="Solar Panel" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-sun text-orange-500 mr-2"></i>
+                                <h3 class="text-xl font-semibold text-gray-800">CLEANIX</h3>
+                            </div>
+                            <p id="desc-solar" class="text-gray-600">
+                                Cleanix terobosan mengurangi limbah kardus di rumah, dengan menggunakan kembali (reuse) kardus yang tidak digunakan.
+                            </p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-xs py-1 px-2 bg-orange-100 text-orange-600 rounded-full">Bahan Bekas</span>
+                                <a href="https://p5-cleanix.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Arduino Controller - Centered -->
+                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-arduino">
+                    <div class="w-full md:w-2/3">
+                        <div class="relative overflow-hidden">
+                            <img src="https://lh3.googleusercontent.com/d/1lfijsE1MA_aSfPw54ny64tvN0M5NVDoT" 
+                                 alt="Arduino Controller" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-microchip text-green-500 mr-2"></i>
+                                <h3 class="text-xl font-semibold text-gray-800">Smart Watering Plant System</h3>
+                            </div>
+                            <p id="desc-arduino" class="text-gray-600">
+                                Solusi dengan mengotomatiskan proses penyiraman menggunakan sensor kelembapan tanah dan mikrokontroler.
+                            </p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-xs py-1 px-2 bg-green-100 text-green-600 rounded-full">Tek. Sederhana</span>
+                                <a href="https://projek-p5-one.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp_Image_2025-06-04_at_11.51.39_c22fdf51-removebg-preview.png" 
+                         alt="Logo XI3" class="h-16 mb-4">
+                    <p class="max-w-xs text-gray-400">
+                        Showcasing the engineering and technological prowess of Class XI3.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap down-0">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#hero" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#services" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024-2025 Class of XI3 - BARISTA All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation for service cards when they come into view
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add animation class to hero text
+        window.addEventListener('load', () => {
+            const heroText = document.querySelector('.typewriter h1');
+            heroText.classList.add('typewriter-animation');
+        });
+    </script>
+</body>
+</html>
