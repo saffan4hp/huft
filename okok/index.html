@@ -30,7 +30,8 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            margin: 1rem; /* Menyamaratakan margin */
+            margin: 1rem;
+            width: 300px; /* Lebar card diperlebar */
         }
         
         .service-card:hover {
@@ -88,13 +89,16 @@
 
         .project-image {
             width: 100%;
-            height: 250px; /* Ukuran gambar disesuaikan */
+            height: 250px;
             object-fit: cover;
         }
 
-        .centered-card {
+        .projects-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
         }
 
         .section-padding {
@@ -157,16 +161,16 @@
 
     <!-- Services Section -->
     <section id="services" class="section-padding bg-white">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto">
             <div class="text-center text-margin">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Hasil Karya Kami!</h2>
                 <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
                 <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Discover the innovative components that build our technology showcase</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="projects-container">
                 <!-- Manual Generator -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-manual">
+                <div class="service-card bg-white" tabindex="0" aria-describedby="desc-manual">
                     <div class="relative overflow-hidden">
                         <img src="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/WhatsApp%20Image%202025-06-13%20at%2021.14.48.jpeg" 
                              alt="Chopper Sayuran" class="project-image">
@@ -188,7 +192,7 @@
                 </div>
                 
                 <!-- DC Generator -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-dc">
+                <div class="service-card bg-white" tabindex="0" aria-describedby="desc-dc">
                     <div class="relative overflow-hidden">
                         <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp%20Image%202025-06-03%20at%2013.45.58_2f7eb441.jpg" 
                              alt="GE Generator" class="project-image">
@@ -210,7 +214,7 @@
                 </div>
                 
                 <!-- Clap Switch -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-clap">
+                <div class="service-card bg-white" tabindex="0" aria-describedby="desc-clap">
                     <div class="relative overflow-hidden">
                         <img src="https://projek-p5-be7t.vercel.app/sponspp.jpeg" 
                              alt="Clap Switch" class="project-image">
@@ -231,8 +235,8 @@
                     </div>
                 </div>
 
-                <!-- Solar Panel - Centered -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-solar">
+                <!-- Solar Panel -->
+                <div class="service-card bg-white" tabindex="0" aria-describedby="desc-solar">
                     <div class="relative overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1FtkUstm2fKdtF54B7Vs1kakkYxMBoTwu" 
                              alt="Solar Panel" class="project-image">
@@ -253,8 +257,8 @@
                     </div>
                 </div>
 
-                <!-- Arduino Controller - Centered -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-arduino">
+                <!-- Arduino Controller -->
+                <div class="service-card bg-white" tabindex="0" aria-describedby="desc-arduino">
                     <div class="relative overflow-hidden">
                         <img src="https://lh3.googleusercontent.com/d/1lfijsE1MA_aSfPw54ny64tvN0M5NVDoT" 
                              alt="Arduino Controller" class="project-image">
