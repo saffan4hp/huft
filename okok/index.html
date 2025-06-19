@@ -96,35 +96,64 @@
             display: flex;
             justify-content: center;
         }
+
+        /* Konsistensi margin dan padding */
+        .section-padding {
+            padding: 5rem 1.5rem;
+        }
+
+        .card-padding {
+            padding: 1.5rem;
+        }
+
+        .card-margin {
+            margin-bottom: 2rem;
+        }
+
+        .title-margin {
+            margin-bottom: 1rem;
+        }
+
+        .text-margin {
+            margin-bottom: 1.5rem;
+        }
+
+        .button-padding {
+            padding: 0.75rem 1.5rem;
+        }
+
+        .footer-padding {
+            padding: 3rem 1.5rem;
+        }
     </style>
 </head>
 <body>
     <!-- Hero Section -->
     <section id="hero" class="relative">
         <!-- Navigation -->
-        <nav class="flex items-center justify-between px-12 py-6">
+        <nav class="flex items-center justify-between px-6 py-4">
             <div class="flex items-center">
                 <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp_Image_2025-06-04_at_11.51.39_c22fdf51-removebg-preview.png" 
                      alt="Logo XI3" class="h-16">
             </div>
-            <div class="hidden md:flex space-x-8">
+            <div class="hidden md:flex space-x-6">
                 <a href="https://p5-1-xi-3-da3h.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 1</a>
                 <a href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 2</a>
                 <a href="https://p5-cleanix.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 3</a>
                 <a href="https://projek-p5-one.vercel.app/" class="nav-item text-white hover:text-blue-400" target="_blank">Tim 4</a>
-                <a href="https://projek-p5-be7t.vercel.app/" class="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition" target="_blank">Explore Projects</a>
+                <a href="https://projek-p5-be7t.vercel.app/" class="button-padding bg-blue-500 text-white rounded-full hover:bg-blue-600 transition" target="_blank">Explore Projects</a>
             </div>
         </nav>
         
         <!-- Hero Content -->
         <div class="flex-grow flex flex-col items-center justify-center text-center px-4">
-            <div class="typewriter mb-4">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">Meet Our Final Projects</h1>
+            <div class="typewriter title-margin">
+                <h1 class="text-4xl md:text-6xl font-bold">Meet Our Final Projects</h1>
             </div>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl">
+            <p class="text-xl md:text-2xl text-margin max-w-2xl">
                 Penampilan Gelar Karya P5 'Rekayasa Teknologi' Kelas XI3
             </p>
-            <button class="floating-btn px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all">
+            <button class="floating-btn button-padding bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-lg font-semibold hover:from-blue-600 hover:to-purple-700 transition-all">
                 <a href="#services">Discover More</a>
                 <i class="fas fa-arrow-down ml-2"></i>
             </button>
@@ -140,9 +169,9 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <section id="services" class="section-padding bg-white">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
+            <div class="text-center text-margin">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Hasil Karya Kami!</h2>
                 <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
                 <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Discover the innovative components that build our technology showcase</p>
@@ -150,21 +179,21 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Manual Generator -->
-                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-manual">
+                <div class="service-card bg-white group card-margin" tabindex="0" aria-describedby="desc-manual">
                     <div class="relative overflow-hidden">
                         <img src="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/WhatsApp%20Image%202025-06-13%20at%2021.14.48.jpeg" 
                              alt="Chopper Sayuran" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
+                    <div class="card-padding">
+                        <div class="flex items-center title-margin">
                             <i class="fas fa-cog text-blue-500 mr-2"></i>
                             <h3 class="text-xl font-semibold text-gray-800" href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/">Chopper Sayuran</h3>
                         </div>
-                        <p id="desc-manual" class="text-gray-600">
+                        <p id="desc-manual" class="text-gray-600 text-margin">
                            Dapat memotong sayur secara praktis dan efisien. Dapat digunakan dimanapun dan kapanpun. Hemat waktu dan listrik!
                         </p>
-                        <div class="mt-4 flex justify-between items-center">
+                        <div class="flex justify-between items-center">
                             <span class="text-xs py-1 px-2 bg-blue-100 text-blue-600 rounded-full">Barang Bekas</span>
                             <a href="https://projekp5-kel2-xi-3-git-main-winaaa05s-projects.vercel.app/" target="_blank" class="text-sm font-medium hover:text-blue-700">Read More →</a>
                         </div>
@@ -172,21 +201,21 @@
                 </div>
                 
                 <!-- DC Generator -->
-                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-dc">
+                <div class="service-card bg-white group card-margin" tabindex="0" aria-describedby="desc-dc">
                     <div class="relative overflow-hidden">
                         <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp%20Image%202025-06-03%20at%2013.45.58_2f7eb441.jpg" 
                              alt="GE Generator" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
+                    <div class="card-padding">
+                        <div class="flex items-center title-margin">
                             <i class="fas fa-bolt text-yellow-500 mr-2"></i>
                             <h3 class="text-xl font-semibold text-gray-800">GE Generator</h3>
                         </div>
-                        <p id="desc-dc" class="text-gray-600">
+                        <p id="desc-dc" class="text-gray-600 text-margin">
                             Green Electricity generator berupa generator sederhana yang digerakkan dengan roda pemutar manual yang dapat menghasilkan listrik.
                         </p>
-                        <div class="mt-4 flex justify-between items-center">
+                        <div class="flex justify-between items-center">
                             <span class="text-xs py-1 px-2 bg-yellow-100 text-yellow-600 rounded-full">Tek. Sederhana</span>
                             <a class="text-blue-500 text-sm font-medium hover:text-blue-700" href="https://p5-1-xi-3-da3h.vercel.app/" target="_blank">Read More →</a>
                         </div>
@@ -194,21 +223,21 @@
                 </div>
                 
                 <!-- Clap Switch -->
-                <div class="service-card bg-white group" tabindex="0" aria-describedby="desc-clap">
+                <div class="service-card bg-white group card-margin" tabindex="0" aria-describedby="desc-clap">
                     <div class="relative overflow-hidden">
                         <img src="https://projek-p5-be7t.vercel.app/sponspp.jpeg" 
                              alt="Clap Switch" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                     </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-2">
+                    <div class="card-padding">
+                        <div class="flex items-center title-margin">
                             <i class="fas fa-hand-paper text-purple-500 mr-2"></i>
                             <h3 class="text-xl font-semibold text-gray-800">Spons Eceng Gondok</h3>
                         </div>
-                        <p id="desc-clap" class="text-gray-600">
+                        <p id="desc-clap" class="text-gray-600 text-margin">
                             Spons ini terbuat dari eceng gondok dengan teknologi self-cleaning, dapat membersihkan diri & hambat pertumbuhan jamur.
                         </p>
-                        <div class="mt-4 flex justify-between items-center">
+                        <div class="flex justify-between items-center">
                             <span class="text-xs py-1 px-2 bg-purple-100 text-purple-600 rounded-full">Bahan Alam</span>
                             <a href="https://projek-p5-be7t.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
                         </div>
@@ -219,22 +248,22 @@
             <!-- Centered Cards Section -->
             <div class="grid grid-cols-1 gap-8 mt-8">
                 <!-- Solar Panel - Centered -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-solar">
+                <div class="service-card bg-white group centered-card card-margin" tabindex="0" aria-describedby="desc-solar">
                     <div class="w-full md:w-2/3">
                         <div class="relative overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1FtkUstm2fKdtF54B7Vs1kakkYxMBoTwu" 
                                  alt="Solar Panel" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                         </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-2">
+                        <div class="card-padding">
+                            <div class="flex items-center title-margin">
                                 <i class="fas fa-sun text-orange-500 mr-2"></i>
                                 <h3 class="text-xl font-semibold text-gray-800">CLEANIX</h3>
                             </div>
-                            <p id="desc-solar" class="text-gray-600">
+                            <p id="desc-solar" class="text-gray-600 text-margin">
                                 Cleanix terobosan mengurangi limbah kardus di rumah, dengan menggunakan kembali (reuse) kardus yang tidak digunakan.
                             </p>
-                            <div class="mt-4 flex justify-between items-center">
+                            <div class="flex justify-between items-center">
                                 <span class="text-xs py-1 px-2 bg-orange-100 text-orange-600 rounded-full">Bahan Bekas</span>
                                 <a href="https://p5-cleanix.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
                             </div>
@@ -243,22 +272,22 @@
                 </div>
                 
                 <!-- Arduino Controller - Centered -->
-                <div class="service-card bg-white group centered-card" tabindex="0" aria-describedby="desc-arduino">
+                <div class="service-card bg-white group centered-card card-margin" tabindex="0" aria-describedby="desc-arduino">
                     <div class="w-full md:w-2/3">
                         <div class="relative overflow-hidden">
                             <img src="https://lh3.googleusercontent.com/d/1lfijsE1MA_aSfPw54ny64tvN0M5NVDoT" 
                                  alt="Arduino Controller" class="project-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                         </div>
-                        <div class="p-6">
-                            <div class="flex items-center mb-2">
+                        <div class="card-padding">
+                            <div class="flex items-center title-margin">
                                 <i class="fas fa-microchip text-green-500 mr-2"></i>
                                 <h3 class="text-xl font-semibold text-gray-800">Smart Watering Plant System</h3>
                             </div>
-                            <p id="desc-arduino" class="text-gray-600">
+                            <p id="desc-arduino" class="text-gray-600 text-margin">
                                 Solusi dengan mengotomatiskan proses penyiraman menggunakan sensor kelembapan tanah dan mikrokontroler.
                             </p>
-                            <div class="mt-4 flex justify-between items-center">
+                            <div class="flex justify-between items-center">
                                 <span class="text-xs py-1 px-2 bg-green-100 text-green-600 rounded-full">Tek. Sederhana</span>
                                 <a href="https://projek-p5-one.vercel.app/" target="_blank" class="text-blue-500 text-sm font-medium hover:text-blue-700">Read More →</a>
                             </div>
@@ -270,20 +299,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white footer-padding">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="mb-8 md:mb-0">
                     <img src="https://p5-1-xi-3-da3h.vercel.app/WhatsApp_Image_2025-06-04_at_11.51.39_c22fdf51-removebg-preview.png" 
                          alt="Logo XI3" class="h-16 mb-4">
-                    <p class="max-w-xs text-gray-400">
+                    <p class="max-w-xs text-gray-400 text-margin">
                         Showcasing the engineering and technological prowess of Class XI3.
                     </p>
                 </div>
                 
-                <div class="grid grid-cols-2 gap down-0">
+                <div class="grid grid-cols-2 gap-8">
                     <div>
-                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <h3 class="text-lg font-semibold title-margin">Quick Links</h3>
                         <ul class="space-y-2">
                             <li><a href="#hero" class="text-gray-400 hover:text-white transition">Home</a></li>
                             <li><a href="#services" class="text-gray-400 hover:text-white transition">Projects</a></li>
@@ -294,7 +323,7 @@
                 </div>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>© 2024-2025 Class of XI3 - BARISTA All Rights Reserved</p>
             </div>
         </div>
